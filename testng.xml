@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test Estimate Hub Tests" parallel="tests" thread-count="10">
+	<listeners>
+		<listener class-name="io.nishadc.automationtestingframework.testngcustomization.ReportGenerator"></listener>
+		<listener class-name="io.nishadc.automationtestingframework.testngcustomization.ExecutionController"></listener>
+	</listeners>
+	<test name="Dummy Tests" parallel="methods" thread-count="10">
+		<classes>
+			<class name="io.github.nishadchayanakhawa.taskvault.unittests.api.TaskVaultApplicationControllerTests"></class>
+		</classes>
+	</test>
+</suite>
